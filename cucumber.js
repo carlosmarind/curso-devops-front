@@ -1,4 +1,4 @@
-const config = {
+export default  {
   paths: ['tests/acceptance/features/**/*.feature'],
   require: ['tests/acceptance/step_definitions/**/*.ts'],
   requireModule: ['@swc-node/register'],
@@ -8,8 +8,9 @@ const config = {
   ],
   timeout: 10000, // tiempo máximo por paso (ms)
   formatOptions: {
+    html: {
+      externalAttachments: true
+    },
     snippetInterface: 'async-await',
   },
 };
-
-export default config
