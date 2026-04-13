@@ -8,9 +8,6 @@ export default  {
   ],
   timeout: 10000, // tiempo máximo por paso (ms)
   formatOptions: {
-    html: {
-      externalAttachments: true
-    },
     snippetInterface: 'async-await',
   },
 };
